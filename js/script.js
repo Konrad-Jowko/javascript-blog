@@ -37,12 +37,16 @@
 
     /* get 'href' attribute from the clicked link */
 
-    const linkHref =  document.querySelector('.titles a.active').getAttribute('href');
+    const linkHref =  clickedElement.getAttribute('href');
       console.log('Link href:', linkHref);
 
     /* find the correct article using the selector (value of 'href' attribute) */
 
+    const correctArticle = document.querySelector(linkHref);
+    console.log(correctArticle);
+
     /* add class 'active' to the correct article */
+    
   }
 
   const links = document.querySelectorAll('.titles a');
